@@ -16,7 +16,8 @@
     "redux": "^4.0.0",
     "redux-thunk": "^2.3.0",
     "socket.io-client": "^2.1.1",
-    "tweetnacl": "^1.0.0"
+    "tweetnacl": "^1.0.0",
+    "snyk": "^1.161.1"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.6",
@@ -39,6 +40,9 @@
     "canary": "BROWSER='Google Chrome Canary' react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "eject": "react-scripts eject",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
